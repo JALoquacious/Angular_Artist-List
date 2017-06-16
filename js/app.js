@@ -1,7 +1,4 @@
-let app = angular.module('app', [
-    'ngRoute',
-    'artistControllers'
-]);
+let app = angular.module('app', ['ngRoute', 'artistControllers']);
 
 app.config(['$routeProvider', function($routeProvider) {
     $routeProvider

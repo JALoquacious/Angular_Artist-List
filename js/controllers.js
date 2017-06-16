@@ -1,4 +1,4 @@
-let artistControllers = angular.module('artistControllers', []);
+let artistControllers = angular.module('artistControllers', ['ngAnimate']);
 
 artistControllers.controller('ListController',
     ['$scope', '$http', function($scope, $http) {

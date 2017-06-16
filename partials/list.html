@@ -18,8 +18,8 @@
             descending
         </label>
     </div>
-    <ul class="artistlist">
-        <li class="artist cf" ng-repeat="artist in artists | filter: query | orderBy: artistOrder:direction">
+    <ul class="artistlist" ng-show="query">
+        <li class="artist cf" ng-repeat="artist in artists | filter: query | orderBy: artistOrder:direction" ng-animate="'animate'">
             <a href="#/details/{{artists.indexOf(artist)}}">
                 <img ng-src="images/{{artist.shortname}}_tn.jpg" alt="Photo of {{artist.name}}">
                 <div class="info">
