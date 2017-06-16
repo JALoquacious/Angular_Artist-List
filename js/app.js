@@ -11,7 +11,7 @@ app.config(['$routeProvider', function($routeProvider) {
         })
         .when('/details/:itemId', {
             templateUrl: '/partials/details.html',
-            controller: 'detailsController'
+            controller: 'DetailsController'
         })
         .otherwise({
             redirectTo: '/list'
